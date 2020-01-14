@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 @import 'modules/_hero';
 @import 'modules/_skills';
+@import 'modules/_projects';
 
 html {
   box-sizing: border-box;
@@ -21,4 +22,9 @@ body {
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
   border: 16px solid $big-stone;
+}
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto;
 }
