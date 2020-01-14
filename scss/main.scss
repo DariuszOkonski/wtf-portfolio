@@ -2,10 +2,12 @@
 @import '_variables';
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 @import 'modules/_hero';
+@import 'modules/_skills';
 
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
