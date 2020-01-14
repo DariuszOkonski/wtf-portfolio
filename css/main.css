@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 .hero {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 184px;
   margin: 0 auto;
 }
 
@@ -47,10 +47,96 @@
   border-bottom: 2px solid #0593fb;
 }
 
+.skills {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.skills__title {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 1rem 0;
+  border-bottom: 2px solid #e5d8ec;
+}
+
+.skills-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 8rem 0 0;
+}
+
+.skills-list__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  margin: 0;
+}
+
+.skills-list__title::before {
+  content: '';
+  width: 80px;
+  height: 4px;
+  display: block;
+  background-color: #06c847;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list--violet .skills-list__title::before {
+  background-color: #653cad;
+}
+
+.skills-list--blue .skills-list__title::before {
+  background-color: #2251cc;
+}
+
+.skills-list__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  padding: 0;
+  margin-top: calc(1.5rem + 4px);
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.skills-list__item {
+  color: #52606d;
+  padding: 0.6875rem 0 0.6875rem 30px;
+  min-height: 2.5rem;
+  position: relative;
+}
+
+.skills-list__item::before {
+  content: '';
+  position: absolute;
+  top: 0.6875rem;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../assets/img/tick-green.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.skills-list--violet .skills-list__item::before {
+  background-image: url("../../assets/img/tick-violet.png");
+}
+
+.skills-list--blue .skills-list__item::before {
+  background-image: url("../../assets/img/tick-blue.png");
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
