@@ -1,0 +1,79 @@
+.skills {
+  max-width: 1184px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-bottom: 2px solid #e5d8ec;
+  }
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 0 0;
+
+  &__title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 0;
+
+    &::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background-color: $green;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+
+      .skills-list--violet & {
+        background-color: $violet;
+      }
+
+      .skills-list--blue & {
+        background-color: $dark-blue;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin-top: calc(1.5rem + 4px);
+    column-gap: 1.5rem;
+  }
+
+  &__item {
+    color: $gray;
+    padding: 0.6875rem 0 0.6875rem 30px;
+    min-height: 2.5rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.6875rem;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url('../../assets/img/tick-green.png');
+      background-position: center;
+      background-size: cover;
+
+      .skills-list--violet & {
+        background-image: url('../../assets/img/tick-violet.png');
+      }
+
+      .skills-list--blue & {
+        background-image: url('../../assets/img/tick-blue.png');
+      }
+    }
+  }
+}
