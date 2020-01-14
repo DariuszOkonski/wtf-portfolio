@@ -1,5 +1,6 @@
 .projects {
-  background-color: $light-gray;
+  // background-color: $light-gray;
+  background-color: darken($color: $light-gray, $amount: 10);
   padding: 8rem 0;
 
   &__title {
