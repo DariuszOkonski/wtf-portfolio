@@ -223,6 +223,70 @@
   margin-right: 0.5rem;
 }
 
+.contact {
+  background-color: #171f3f;
+  color: #fff;
+  padding-bottom: calc(8rem - 16px);
+}
+
+.contact__title {
+  font-size: 2.25rem;
+  margin: 0 auto 1rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 8rem 0 0;
+  max-width: 1184px;
+}
+
+.contact__title::before {
+  content: '';
+  width: 80px;
+  height: 4px;
+  display: block;
+  background-color: #0593fb;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.contact__description {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  max-width: 580px;
+  margin: 0 0 4rem;
+}
+
+.contact__mail {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #0593fb;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__link {
+  color: #fff;
+  font-size: 2.2rem;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.social .social__item:nth-of-type(1) .social__link {
+  margin-left: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -235,6 +299,8 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
