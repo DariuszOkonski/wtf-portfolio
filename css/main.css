@@ -210,6 +210,13 @@
   list-style-type: none;
 }
 
+@media (max-width: 767px) {
+  .projects-list {
+    -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
 .project {
   background-color: #fff;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
