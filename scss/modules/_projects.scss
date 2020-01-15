@@ -42,6 +42,10 @@
   border-radius: 8px;
   overflow: hidden;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__container {
     padding: 3rem;
   }
