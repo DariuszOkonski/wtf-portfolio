@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 .hero {
-  max-width: 1184px;
-  padding: 112px 0 184px;
+  max-width: 1216px;
+  padding: 112px 16px 184px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,8 @@
 }
 
 .skills {
-  max-width: 1184px;
+  padding: 0 16px;
+  max-width: 1216px;
   margin: 8rem auto;
 }
 
@@ -142,8 +143,8 @@
   margin: 0 auto;
   font-style: normal;
   font-weight: 600;
-  padding: 1rem 0;
-  max-width: 1184px;
+  padding: 1rem 16px;
+  max-width: 1216px;
 }
 
 .projects__description {
@@ -234,8 +235,8 @@
   margin: 0 auto 1rem;
   font-style: normal;
   font-weight: 600;
-  padding: 8rem 0 0;
-  max-width: 1184px;
+  padding: 8rem 16px 0;
+  max-width: 1216px;
 }
 
 .contact__title::before {
@@ -294,6 +295,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -311,7 +318,8 @@ body {
 }
 
 .container {
-  max-width: 1184px;
+  max-width: 1216px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
